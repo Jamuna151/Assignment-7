@@ -1,0 +1,22 @@
+import java.util.*;
+class BankAccount {
+    private double balance;
+    public void deposit(double amount) {
+        balance += amount;
+    }
+    public double getBalance() {
+        return balance;
+    }
+}
+public class TestBank {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        BankAccount acc = new BankAccount();
+
+        System.out.print("Enter amount to deposit: ");
+        double amount = scanner.nextDouble();
+
+        acc.deposit(amount);
+        System.out.println("Balance: " + acc.getBalance());
+}
+}
