@@ -1,0 +1,23 @@
+class Student {
+    int rollNo;
+    String name;
+    Student(int r, String n) {
+        rollNo = r;
+        name = n;
+    }
+    Student(int r) {
+        rollNo = r;
+        name = "Unknown";
+    }
+    void display() {
+        System.out.println("Roll No: " + rollNo + ", Name: " + name);
+    }
+
+    public static void main(String[] args) {
+        Student s1 = new Student(101, "xxx");
+        Student s2 = new Student(102); 
+
+        s1.display(); 
+        s2.display(); 
+        }
+}
